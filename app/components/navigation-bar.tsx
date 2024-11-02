@@ -15,7 +15,7 @@ export default function NavigationBar() {
         name="ホーム"
         width={NAVBAR_ICON_WIDTH}
         height={NAVBAR_ICON_HEIGHT}
-        href="#"
+        href="/"
       />
       <NavBarContent
         src="navbar/timeline.svg"
