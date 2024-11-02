@@ -1,9 +1,9 @@
 import { toImagePath } from "../common";
 import NavigationBar from "../components/navigation-bar";
-import Bar from "./bar";
-import KotenDetailButton from "./botton";
-import KotenImages from "./koten-images";
-import KotenPoster from "./koten-poster";
+import Bar from "../components/poster/bar";
+import KotenDetailButton from "../components/poster/botton";
+import KotenImages from "../components/poster/koten-images";
+import KotenPoster from "../components/poster/koten-poster";
 
 export default function Poster() {
   return (
