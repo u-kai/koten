@@ -1,8 +1,6 @@
-import nextConfig from "@/next.config";
 import Image from "next/image";
-
-const ICON_WIDTH = 30;
-const ICON_HEIGHT = 30;
+import { toImagePath } from "../common";
+import { NAVBAR_ICON_HEIGHT, NAVBAR_ICON_WIDTH } from "../configs";
 
 export default function NavigationBar() {
   return (
@@ -10,35 +8,35 @@ export default function NavigationBar() {
       <NavBarContent
         src="navbar/home.svg"
         name="ホーム"
-        width={ICON_WIDTH}
-        height={ICON_HEIGHT}
+        width={NAVBAR_ICON_WIDTH}
+        height={NAVBAR_ICON_HEIGHT}
         href="#"
       />
       <NavBarContent
         src="navbar/timeline.svg"
         name="タイムライン"
-        width={ICON_WIDTH}
-        height={ICON_HEIGHT}
+        width={NAVBAR_ICON_WIDTH}
+        height={NAVBAR_ICON_HEIGHT}
         href="#"
       />
       <NavBarContent
         src="navbar/add.svg"
         name="作品を追加"
-        width={ICON_WIDTH}
-        height={ICON_HEIGHT}
+        width={NAVBAR_ICON_WIDTH}
+        height={NAVBAR_ICON_HEIGHT}
         href="#"
       />
       <NavBarContent
         src="navbar/chat.svg"
-        width={ICON_WIDTH}
-        height={ICON_HEIGHT}
+        width={NAVBAR_ICON_WIDTH}
+        height={NAVBAR_ICON_HEIGHT}
         name="チャット"
         href="#"
       />
       <NavBarContent
         src="navbar/mypage.svg"
-        width={ICON_WIDTH}
-        height={ICON_HEIGHT}
+        width={NAVBAR_ICON_WIDTH}
+        height={NAVBAR_ICON_HEIGHT}
         name="マイページ"
         href="#"
       />
@@ -56,7 +54,7 @@ function NavBarContent(props: {
   return (
     <a href={props.href} className="flex flex-col items-center text-center">
       <Image
-        src={`${nextConfig.basePath || ""}/${props.src}`}
+        src={toImagePath(props.src)}
         alt="logo"
         width={props.width}
         height={props.height}
