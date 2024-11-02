@@ -1,6 +1,8 @@
 "use client";
 import KotenInput from "@/app/components/koten/input";
+import SelectBanner from "@/app/components/koten/select-banner";
 import Toggle from "@/app/components/koten/toggle";
+import NavigationBar from "@/app/components/navigation-bar";
 import nextConfig from "@/next.config";
 import { useState } from "react";
 
@@ -51,6 +53,12 @@ export default function RegisterKoten() {
       <div className="absolute top-[400px] flex items-center gap-x-2 w-[90%] justify-between">
         <span className="text-[14px]">複数人の投稿を許可する</span>
         <Toggle value={isPublic} onChange={(v) => setIsPublic(v)} />
+      </div>
+      <div className="absolute top-[430px] w-[90%] h-[300px] pt-2">
+        <SelectBanner />
+      </div>
+      <div className="fixed bottom-0 w-full">
+        <NavigationBar />
       </div>
     </div>
   );
