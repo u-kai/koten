@@ -1,3 +1,4 @@
+import nextConfig from "@/next.config";
 import Image from "next/image";
 
 const ICON_WIDTH = 30;
@@ -55,7 +56,7 @@ function NavBarContent(props: {
   return (
     <a href={props.href} className="flex flex-col items-center text-center">
       <Image
-        src={props.src}
+        src={`${nextConfig.basePath || ""}/${props.src}`}
         alt="logo"
         width={props.width}
         height={props.height}
