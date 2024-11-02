@@ -30,7 +30,7 @@ export default function NavigationBar() {
         name="作品を追加"
         width={NAVBAR_ICON_WIDTH}
         height={NAVBAR_ICON_HEIGHT}
-        href="#"
+        href={`${nextConfig.basePath}/register`}
       />
       <NavBarContent
         src="navbar/chat.svg"

@@ -1,4 +1,4 @@
-import SingleWork from "../components/home/single-work";
+import SingleWork from "../home/single-work";
 
 interface ImageProps {
   src: string;

@@ -1,4 +1,4 @@
-import { FONT_COLOR, FONT_FAMILY } from "../configs";
+import { FONT_COLOR, FONT_FAMILY } from "../../configs";
 
 export default function Bar(props: {
   name: string;

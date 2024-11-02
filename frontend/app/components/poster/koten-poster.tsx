@@ -1,4 +1,4 @@
-import { toImagePath } from "../common";
+import { toImagePath } from "../../common";
 import Image from "next/image";
 
 export default function KotenPoster(props: { src: string; height: string }) {
