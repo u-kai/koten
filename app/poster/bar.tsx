@@ -1,13 +1,22 @@
+import { FONT_COLOR, FONT_FAMILY } from "../configs";
+
 export default function Bar(props: {
   name: string;
   start: string;
   end: string;
 }) {
   return (
-    <div>
-      <div>{props.name}</div>
-      <div>{props.start}</div>
-      <div>{props.end}</div>
+    <div className="relative m-5">
+      <div
+        className={`[font-family:'${FONT_FAMILY}'] text-[${FONT_COLOR}]' font-bold`}
+      >
+        {props.name}
+      </div>
+      <div
+        className={`[font-family:'${FONT_FAMILY}'] text-[${FONT_COLOR}]' text-[13px]`}
+      >
+        {props.start} ~ {props.end}
+      </div>
     </div>
   );
 }
