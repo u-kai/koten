@@ -1,6 +1,6 @@
-import ImagesContainer from "./components/images-container";
 import NavigationBar from "./components/navigation-bar";
-import TitleBar from "./components/title-bar";
+import ImagesContainer from "./components/home/images-container";
+import TitleBar from "./components/home/title-bar";
 import { toImagePath } from "./common";
 
 export default function Home() {

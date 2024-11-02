@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { toImagePath } from "../common";
-import { NAVBAR_ICON_HEIGHT, NAVBAR_ICON_WIDTH } from "../configs";
+import {
+  FONT_COLOR,
+  FONT_FAMILY,
+  NAVBAR_ICON_HEIGHT,
+  NAVBAR_ICON_WIDTH,
+} from "../configs";
 
 export default function NavigationBar() {
   return (
@@ -67,7 +72,9 @@ function NavBarContent(props: {
 
 function NavBarName(props: { value: string }) {
   return (
-    <span className="text-[8px] [font-family:'YuGothic'] text-[#464646] ">
+    <span
+      className={`text-[8px] [font-family:'${FONT_FAMILY}'] text-[${FONT_COLOR}] `}
+    >
       {props.value}
     </span>
   );

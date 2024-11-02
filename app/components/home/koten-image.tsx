@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { toImagePath } from "../common";
+import { toImagePath } from "../../common";
 import {
   HEART_ICON_HEIGHT,
   HEART_ICON_WIDTH,
   KOTEN_IMAGE_HEIGHT,
   KOTEN_IMAGE_WIDTH,
-} from "../configs";
+} from "../../configs";
 
 export default function KotenImage(props: { src: string }) {
   return (
