@@ -12,7 +12,7 @@ export default function Home() {
         className="relative m-2 top-20 overflow-y-scroll"
         style={{ height: "calc(100vh - 10rem)" }}
       >
-        <div className="absolute inset-x-0 h-hull ">
+        <div className="absolute inset-x-0 h-hull flex justify-center">
           <ImagesContainer
             images={[
               { src: "/next.svg", type: "koten" },
