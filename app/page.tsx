@@ -1,7 +1,9 @@
+import NavigationBar from "./components/navigation-bar";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="fixed bottom-0 w-full">
+      <NavigationBar />
     </div>
   );
 }
