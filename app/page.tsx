@@ -1,3 +1,4 @@
+import nextConfig from "@/next.config";
 import ImagesContainer from "./components/images-container";
 import NavigationBar from "./components/navigation-bar";
 import TitleBar from "./components/title-bar";
@@ -15,14 +16,14 @@ export default function Home() {
         <div className="absolute inset-x-0 h-hull flex justify-center">
           <ImagesContainer
             images={[
-              { src: "/next.svg", type: "koten" },
-              { src: "/vercel.svg", type: "single-work" },
-              { src: "/next.svg", type: "koten" },
-              { src: "/vercel.svg", type: "single-work" },
-              { src: "/next.svg", type: "koten" },
-              { src: "/vercel.svg", type: "single-work" },
-              { src: "/next.svg", type: "koten" },
-              { src: "/vercel.svg", type: "single-work" },
+              { src: toImagePath("/next.svg"), type: "koten" },
+              { src: toImagePath("/vercel.svg"), type: "single-work" },
+              { src: toImagePath("/next.svg"), type: "koten" },
+              { src: toImagePath("/vercel.svg"), type: "single-work" },
+              { src: toImagePath("/next.svg"), type: "koten" },
+              { src: toImagePath("/vercel.svg"), type: "single-work" },
+              { src: toImagePath("/next.svg"), type: "koten" },
+              { src: toImagePath("/vercel.svg"), type: "single-work" },
             ]}
           />
         </div>
@@ -32,4 +33,8 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+function toImagePath(path: string): string {
+  return `${nextConfig.basePath || ""}/${path}`;
 }
