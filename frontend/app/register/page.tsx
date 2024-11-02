@@ -10,13 +10,13 @@ export default function Register() {
         <div className="absolute top-[300px]">
           <TitleBar />
         </div>
-        <div className="absolute top-[700px]">
+        <div className="absolute top-[500px]">
           <LongButton
             display="個展に参加する"
             href={`${nextConfig.basePath}/koten/list`}
           />
         </div>
-        <div className="absolute top-[740px]">
+        <div className="absolute top-[540px]">
           <LongButton display="作品をUPする" href={`${nextConfig.basePath}/`} />
         </div>
       </div>

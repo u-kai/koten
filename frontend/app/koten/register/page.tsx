@@ -2,6 +2,7 @@
 import KotenInput from "@/app/components/koten/input";
 import SelectBanner from "@/app/components/koten/select-banner";
 import Toggle from "@/app/components/koten/toggle";
+import LongButton from "@/app/components/long-button";
 import NavigationBar from "@/app/components/navigation-bar";
 import nextConfig from "@/next.config";
 import { useState } from "react";
@@ -13,7 +14,7 @@ export default function RegisterKoten() {
   const [url, setUrl] = useState("");
   const [isPublic, setIsPublic] = useState(false);
   return (
-    <div className="w-full flex justify-center relative">
+    <div className="w-full h-[932px] flex justify-center relative">
       <div className="absolute left-3 text-[40px]">
         <a href={`${nextConfig.basePath}/koten/list`}>×</a>
       </div>
@@ -56,6 +57,12 @@ export default function RegisterKoten() {
       </div>
       <div className="absolute top-[430px] w-[90%] h-[300px] pt-2">
         <SelectBanner />
+      </div>
+      <div className="absolute top-[800px] ">
+        <LongButton
+          display="登録する"
+          href={`${nextConfig.basePath}/koten/register/complete`}
+        />
       </div>
       <div className="fixed bottom-0 w-full">
         <NavigationBar />
