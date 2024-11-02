@@ -6,6 +6,7 @@ import {
   NAVBAR_ICON_HEIGHT,
   NAVBAR_ICON_WIDTH,
 } from "../configs";
+import nextConfig from "@/next.config";
 
 export default function NavigationBar() {
   return (
@@ -15,7 +16,7 @@ export default function NavigationBar() {
         name="ホーム"
         width={NAVBAR_ICON_WIDTH}
         height={NAVBAR_ICON_HEIGHT}
-        href="/"
+        href={`${nextConfig.basePath}/`}
       />
       <NavBarContent
         src="navbar/timeline.svg"
