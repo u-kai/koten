@@ -1,5 +1,7 @@
+export const SINGLE_WORK_IMAGE_WIDTH = 172;
+export const SINGLE_WORK_IMAGE_HEIGHT = 164;
 export const KOTEN_IMAGE_WIDTH = 172;
-export const KOTEN_IMAGE_HEIGHT = 164;
+export const KOTEN_IMAGE_HEIGHT = 243;
 export const HEART_ICON_WIDTH = 20;
 export const HEART_ICON_HEIGHT = 20;
 export const NAVBAR_ICON_WIDTH = 30;

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { toImagePath } from "../../common";
-import { HEART_ICON_HEIGHT, HEART_ICON_WIDTH } from "../../configs";
-
-const SINGLE_WORK_IMAGE_WIDTH = 172;
-const SINGLE_WORK_IMAGE_HEIGHT = 243;
+import {
+  HEART_ICON_HEIGHT,
+  HEART_ICON_WIDTH,
+  SINGLE_WORK_IMAGE_HEIGHT,
+  SINGLE_WORK_IMAGE_WIDTH,
+} from "../../configs";
 
 export default function SingleWork(props: { src: string }) {
   return (
