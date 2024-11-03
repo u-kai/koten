@@ -13,6 +13,7 @@ export default function RegisterKoten() {
   const [end, setEnd] = useState("");
   const [url, setUrl] = useState("");
   const [isPublic, setIsPublic] = useState(false);
+  const [preview, setPreview] = useState<string | ArrayBuffer | null>(null);
   return (
     <div className="w-full h-[932px] flex justify-center relative">
       <div className="absolute left-3 text-[40px]">
@@ -56,7 +57,7 @@ export default function RegisterKoten() {
         <Toggle value={isPublic} onChange={(v) => setIsPublic(v)} />
       </div>
       <div className="absolute top-[430px] w-[90%] h-[300px] pt-2">
-        <SelectBanner />
+        <SelectBanner preview={preview} setPreview={setPreview} />
       </div>
       <div className="absolute top-[800px] ">
         <LongButton
